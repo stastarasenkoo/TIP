@@ -1,0 +1,140 @@
+.point-input {
+    display: flex;
+    align-items: center;
+    margin-left: 380px;
+    margin-top: 40px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+input{
+    border-color: #1976d2;
+    background-color: #1976d2;
+}
+
+textarea:focus, input:focus {
+    color: white;
+}
+
+input, select, textarea{
+    color: white;
+}
+
+label{
+    color: #1976d2;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+    margin-top: 0px;
+    justify-content: space-evenly;
+}
+
+#container {
+    display: flex;
+    float: left;
+    justify-content: flex-start;
+    height: 1000px;
+    margin-left: 540px;
+    width: 70%;
+    margin-top: 100px;
+}
+
+p {
+    animation: text-shadow 1.5s ease-in-out infinite;
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 1;
+    color: #0f28b8;
+}
+
+p:hover {
+    animation-play-state: paused;
+}
+
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 #0c2ffb, 
+            0 0.25em 0 #2cfcfd, 
+            0 -0.125em 0 #fb203b, 
+            0 -0.25em 0 #fefc4b;
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #0c2ffb, 
+            0 -0.125em 0 #2cfcfd, 
+            0 0.0625em 0 #fb203b, 
+            0 0.125em 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #0c2ffb, 
+            0 0.0625em 0 #2cfcfd, 
+            0 -0.03125em 0 #fb203b, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+
+.animate-charcter
+{
+  background-image: linear-gradient(
+    -225deg,
+    #367AF6 0%,
+    #364cf5 29%,
+    #9f99f5 67%,
+    #090274 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  height: 100px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

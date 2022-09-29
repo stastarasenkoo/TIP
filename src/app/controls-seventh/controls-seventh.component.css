@@ -1,0 +1,110 @@
+body{
+    height: 1000px;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#newcon{
+    display: flex;
+    flex-direction: row;
+}
+
+#column{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 130px;
+    font-size: 40px;
+    width: 700px;
+}
+
+.checkbox{
+    width: 40px;
+    height: 40px;
+}
+
+.text{
+    border-color: #1976d2;
+    background-color: #1976d2;
+}
+
+textarea:focus, input:focus {
+    color: white;
+}
+
+input, select, textarea{
+    color: white;
+}
+
+table{
+    border: 5px solid #1976d2;    
+}
+
+label{
+    color: #1976d2;
+}
+
+th, td {
+    border: 3px solid #1976d2;
+    text-align: center;
+    color: #1976d2;
+ }
+
+#top{
+    margin-top: 20px;
+    width: 600px;
+}
+
+button{
+    margin-top: 30px;
+    margin-left: 170px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+}
+
+.position{
+    flex-direction: column;
+}
+
+.animate-charcter
+{
+  background-image: linear-gradient(
+    -225deg,
+    #367AF6 0%,
+    #364cf5 29%,
+    #9f99f5 67%,
+    #090274 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.container{
+margin-top: 30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

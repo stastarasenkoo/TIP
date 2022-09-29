@@ -1,0 +1,116 @@
+<body>
+<div class="container">
+    <div>
+        <div class="col-md-12 text-center">
+            <h1 class="animate-charcter">Task: Test participants were offered six tasks. For the solved
+                the task was scored: 1/3, 2/3 or 1. (If the task is not marked as
+                solved, then 0 points are awarded for it). All participants who passed
+                testing were divided into four categories depending on
+                results. The first category included participants, all solutions
+                which were rated with a maximum score of 1. The second category included
+                participants, all tasks of which were estimated not lower than 2/3, but it is obligatory
+                there was at least one task, the solution of which was rated at 1. In the third category
+                there were participants whose all tasks were rated at 2/3 points.
+                The rest of the participants were assigned to the fourth category.
+                Create a questionnaire for a specific test participant. The questionnaire should
+                last name, school number, grades for solving problems. At
+                processing the questionnaire for the participant is required to determine the amount of collected
+                points and the category in which the participant is enrolled.</h1>  
+    </div>
+    </div>
+</div>
+<div id="container">
+    <label for="min">Second name</label>
+    <input type="text" name="secondName" class="text" [(ngModel)]="secondName">
+    <label for="">School number</label>
+    <input type="text" name="schoolNumber" class="text" [(ngModel)]="schoolNumber">
+</div>
+<div id="newcon">
+<table id="top">
+        <tr>
+            <th class="position">Task</th>
+            <th class="position">Performed</th>
+            <th class="position">Grade</th>
+        </tr>
+        <tr>
+            <td>Task 1</td>
+            <td><input type="checkbox" class="checkbox" [(ngModel)]="check1" (click)="setDefault(check1, 'check1')"></td>
+            <td>
+                <input type="radio" id="grade1" value="grade1" name="grade" [(ngModel)]="grade1" (click)="portionClickHandler(check1, $event)">
+                <label for="grade1">1/3</label><br>
+                <input type="radio" id="grade2" value="grade2" name="grade" [(ngModel)]="grade2" (click)="portionClickHandler(check1, $event)">
+                <label for="grade2">2/3</label><br>
+                <input type="radio" id="grade3" value="grade3" name="grade" [(ngModel)]="grade3" (click)="portionClickHandler(check1, $event)">
+                <label for="grade3">1.0</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Task 2</td>
+            <td><input type="checkbox" class="checkbox" [(ngModel)]="check2" (click)="setDefault(check2, 'check2')"></td>
+            <td>
+                <input type="radio" id="grade4" value="grade4" name="grade1" [(ngModel)]="grade4" (click)="portionClickHandler(check2, $event)">
+                <label for="grade4">1/3</label><br>
+                <input type="radio" id="grade5" value="grade5" name="grade1" [(ngModel)]="grade5" (click)="portionClickHandler(check2, $event)">
+                <label for="grade5">2/3</label><br>
+                <input type="radio" id="grade6" value="grade6" name="grade1" [(ngModel)]="grade6" (click)="portionClickHandler(check2, $event)">
+                <label for="grade6">1.0</label>
+            </td>        
+        </tr>
+        <tr>
+            <td>Task 3</td>
+            <td><input type="checkbox" class="checkbox" [(ngModel)]="check3" (click)="setDefault(check3, 'check3')"></td>
+            <td>
+                <input type="radio" id="grade7" value="grade7" name="grade2" [(ngModel)]="grade7" (click)="portionClickHandler(check3, $event)">
+                <label for="grade7">1/3</label><br>
+                <input type="radio" id="grade8" value="grade8" name="grade2" [(ngModel)]="grade8" (click)="portionClickHandler(check3, $event)">
+                <label for="grade8">2/3</label><br>
+                <input type="radio" id="grade9" value="grade9" name="grade2" [(ngModel)]="grade9" (click)="portionClickHandler(check3, $event)">
+                <label for="grade9">1.0</label>
+            </td>        
+        </tr>
+        <tr>
+            <td>Task 4</td>
+            <td><input type="checkbox" class="checkbox" [(ngModel)]="check4" (click)="setDefault(check4, 'check4')"></td>
+            <td>
+                <input type="radio" id="grade10" value="grade10" name="grade3" [(ngModel)]="grade10" (click)="portionClickHandler(check4, $event)">
+                <label for="grade10">1/3</label><br>
+                <input type="radio" id="grade11" value="grade11" name="grade3" [(ngModel)]="grade11" (click)="portionClickHandler(check4, $event)">
+                <label for="grade11">2/3</label><br>
+                <input type="radio" id="grade12" value="grade12" name="grade3" [(ngModel)]="grade12" (click)="portionClickHandler(check4, $event)">
+                <label for="grade12">1.0</label>
+            </td>        
+        </tr>
+        <tr>
+            <td>Task 5</td>
+            <td><input type="checkbox" class="checkbox" [(ngModel)]="check5" (click)="setDefault(check5, 'check5')"></td>
+            <td>
+                <input type="radio" id="grade13" value="grade13" name="grade4" [(ngModel)]="grade13" (click)="portionClickHandler(check5, $event)">
+                <label for="grade13">1/3</label><br>
+                <input type="radio" id="grade14" value="grade14" name="grade4" [(ngModel)]="grade14" (click)="portionClickHandler(check5, $event)">
+                <label for="grade14">2/3</label><br>
+                <input type="radio" id="grade15" value="grade15" name="grade4" [(ngModel)]="grade15" (click)="portionClickHandler(check5, $event)">
+                <label for="grade15">1.0</label>
+            </td>        
+        </tr>
+        <tr>
+            <td>Task 6</td>
+            <td><input type="checkbox" class="checkbox" [(ngModel)]="check6" (click)="setDefault(check6, 'check6')"></td>
+            <td>
+                <input type="radio" id="grade16" value="grade16" name="grade5" [(ngModel)]="grade16" (click)="portionClickHandler(check6, $event)">
+                <label for="grade16">1/3</label><br>
+                <input type="radio" id="grade17" value="grade17" name="grade5" [(ngModel)]="grade17" (click)="portionClickHandler(check6, $event)">
+                <label for="grade17">2/3</label><br>
+                <input type="radio" id="grade18" value="grade18" name="grade5" [(ngModel)]="grade18" (click)="portionClickHandler(check6, $event)">
+                <label for="grade18">1.0</label>
+            </td>        
+        </tr>        
+</table>
+<div id="column" class="animate-charcter">
+    <p id="secondName"></p>
+    <p id="schoolNumber"></p>
+    <p id="overallScore"></p>
+    <p id="group"></p>
+</div>
+</div>
+<button (click)="calculate(check1,check2,check3,check4,check5,check6,grade1,grade2,grade3,grade4,grade5,grade6,grade7,grade8,grade9,grade10,grade11,grade12,grade13,grade14,grade15,grade16,grade17,grade18)">Calculate</button>
+</body>

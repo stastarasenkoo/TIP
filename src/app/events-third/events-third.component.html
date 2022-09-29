@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="animate-charcter">Task 1: The coordinates of three points are given on the plane. Write a script
+            which calculates the area of a triangle (use the Focus event).</h1>  
+        <h1 class="animate-charcter">Task 2: Write a script that for a point given by coordinates on
+            plane, defines the distance to the origin (use
+            select event).</h1>
+        <h1 class="animate-charcter">Task 3:Write a script that swaps the values of two
+            entered variables (use the Blur event).</h1>
+        </div>
+    </div>
+</div>
+            <div class="point-input">
+                <div class="input">
+                    <label>X1</label>
+                    <input type="text" [(ngModel)]="x1Text" >
+                </div>
+                <div class="input">
+                    <label>Y1</label>
+                    <input type="text" [(ngModel)]="y1Text" >
+                </div>
+                <div class="input">
+                    <label>Select</label>
+                    <input (select)="calculateOrigin(x1Text, y1Text)" type="text" value="Select text">
+                </div>
+            </div>
+            <div class="point-input">
+                <div class="input">
+                    <label>X2</label>
+                    <input type="text" [(ngModel)]="x2Text" (blur)="swap(x2Text, y2Text)">
+                </div>
+                <div class="input">
+                    <label>Y2</label>
+                    <input type="text" [(ngModel)]="y2Text" (blur)="swap(x2Text, y2Text)">
+                </div>
+                <div class="input">
+                    <label>Select</label>
+                    <input (select)="calculateOrigin(x2Text, y2Text)" type="text" value="Select text">
+                </div>
+            </div>
+            <div class="point-input">
+                <div class="input">
+                    <label>X3</label>
+                    <input type="text" [(ngModel)]="x3Text">
+                </div>
+                <div class="input">
+                    <label>Y3</label>
+                    <input type="text" [(ngModel)]="y3Text">
+                </div>
+                <div class="input">
+                    <label>Focus</label>
+                    <input (focus)="calculateArea()" [(ngModel)]="Result" type="text" value="Focus">
+                </div>
+            </div>
+    <div id="wrapper">
+        <div id="container">
+            <p id="box"></p>
+        </div>
+    </div>

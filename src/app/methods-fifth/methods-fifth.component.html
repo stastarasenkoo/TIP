@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="animate-charcter">Task 1: Write a script for choosing from three images one that
+            inserted below these three.</h1>  
+        <h1 id="height" class="animate-charcter">Task 2: Write a picture script with a "zoom effect", i.e.
+            increase in size as a reaction to the mouse cursor entering the field
+            drawing (use the width and height properties).</h1>
+        <h1 class="animate-charcter">Task 3: Write a script for a graphical horizontal menu with
+            the arrow that appears above the item at which the cursor is located.</h1>
+        </div>
+    </div>
+</div>
+<section class="task1">
+    <img src="./assets/picture1.jpg" alt="" (click)="pickPicture(0)">
+    <img src="./assets/picture2.jpg" alt="" (click)="pickPicture(1)">
+    <img src="./assets/picture3.jpg" alt="" (click)="pickPicture(2)">
+
+</section>
+<div class="left">
+    <img src="" alt="">
+</div>
+<section class="task2">
+    <img src="./assets/picture1.jpg" alt="" (mouseover)="changeScale(4, 400, 300)" (mouseout)="changeScale(4, 'auto', 200)">
+    <img src="./assets/picture2.jpg" alt="" (mouseover)="changeScale(5, 400, 300)" (mouseout)="changeScale(5, 'auto', 200)">
+    <img src="./assets/picture3.jpg" alt="" (mouseover)="changeScale(6, 400, 300)" (mouseout)="changeScale(6, 'auto', 200)">
+</section>
+<section class="task3">
+    <div class="card">
+        <img src="./assets/unselected.jpg" alt="" class="selector-icon">
+        <img src="./assets/picture1.jpg" alt="" (mouseover)="pictureReducer(7, 1)" (mouseout)="pictureReducer(7, 0)">
+    </div>
+    <div class="card">
+        <img src="./assets/unselected.jpg" alt="" class="selector-icon">
+        <img src="./assets/picture2.jpg" alt="" (mouseover)="pictureReducer(9, 1)" (mouseout)="pictureReducer(9, 0)">
+    </div>
+    <div class="card">
+        <img src="./assets/unselected.jpg" alt="" class="selector-icon">
+        <img src="./assets/picture3.jpg" alt="" (mouseover)="pictureReducer(11, 1)" (mouseout)="pictureReducer(11, 0)">
+    </div>
+</section>

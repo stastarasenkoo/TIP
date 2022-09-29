@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 id="top1" class="animate-charcter">Task 1: Write code that:
+            1. Prompts for values one by one using prompt and stores them in
+            array.
+            2. Ends input as soon as the visitor enters an empty string, not
+            number or press Cancel.
+            3. In this case, zero 0 should not end the input, this is an allowed number.
+            4. Displays the sum of all values in an array</h1> 
+        <h1 class="animate-charcter">Task 2: Create an array. Fill it with random values from A to B.
+            The values A, B and the size of the array are entered on the form.</h1> 
+        <h1 id="top2" class="animate-charcter">Example: var input = [1, 2, 3, 4, 5, 6];</h1>
+        <h1 id="top2" class="animate-charcter">function isEven(x) return x % 2 == 0; // checks for evenness</h1>
+        <h1 id="top2" class="animate-charcter">console.log(filt(input, isEven)); // [2, 4, 6]</h1>  
+        <h1 id="top2" class="animate-charcter">The function must not modify the original array:</h1> 
+        <h1 id="top2" class="animate-charcter">console.log(input); // [1, 2, 3, 4, 5, 6]</h1> 
+        </div>
+    </div>
+</div>
+
+<div id="center" class="top10">
+    <div>
+        <button (click)="sum()">First task</button>
+        <div id="wrapper">
+            <div id="container">
+                <p id="sum"></p>
+            </div>
+        </div>        
+    </div>
+    <div>
+        <label for="min">Минимальное значение</label>
+        <input type="text" [(ngModel)]="min" name="min">
+        <label for="">Максимальное значение</label>
+        <input type="text" [(ngModel)]="max" name="max">
+        <label for="">Длина массива</label>
+        <input type="text" [(ngModel)]="length" name="length">
+        <button id="top3" type="button" (click)="filt(isEven, createArray(min,max,length))">Создать</button>
+        <div id="wrapper">
+            <div id="container">
+                <p class="top4" id="array"></p>
+            </div>
+        </div>  
+    </div>
+</div>
