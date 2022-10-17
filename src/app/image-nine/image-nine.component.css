@@ -1,0 +1,54 @@
+ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    padding: 0;
+    flex-direction: column;
+    width: 13%;
+}
+
+.top
+{
+    margin-top: 70px;
+}
+
+.block{
+display: flex;
+}
+
+li {
+    padding: 10px 5px;
+    margin-top: 15px;
+    background-color: rgb(65, 47, 223);
+}
+
+.picture
+{
+    width: 100px;
+    height: 60px;
+    margin-left: -115px;
+}
+
+.name {
+    text-align:center;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.title {
+    text-align: center;
+}
+
+#slider {
+    margin-top: -450px;
+    margin-left: 200px;
+    height: 400px;
+    width: 80%;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.slide{
+    margin-left: 180px;
+    margin-top: 50px;
+}

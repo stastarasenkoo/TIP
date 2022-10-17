@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'app-forms-eighth',
-  templateUrl: './forms-eighth.component.html',
-  styleUrls: ['./forms-eighth.component.css']
+  selector: 'app-localstorage-ten',
+  templateUrl: './localstorage-ten.component.html',
+  styleUrls: ['./localstorage-ten.component.css']
 })
-export class FormsEighthComponent {
+export class LocalstorageTenComponent {
 
   form1 = new FormGroup({
     secondName: new FormControl(),
@@ -144,5 +144,23 @@ calculateVacation(){
       vacation: vacationStart.toDateString()
      })
     }
+
+    this.SetListOfEmployes();
   };
+
+  SetListOfEmployes(){
+    const obj:any = {
+      list: []
+    }
+      for(let form of this.forms) { 
+        obj.list.push({
+          name: form.value.secondName,
+          date: form.value.date
+      })
+      }; 
+
+      localStorage.setItem("list", JSON.stringify(obj))     
+   }
+
+  
 }
